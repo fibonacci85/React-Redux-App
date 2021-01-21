@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { getJoke } from '../actions/index';
 
 
-const Jokes = ({joke, isFetching, error, getJoke}) => {
+const Jokes = ({error, isFetching, joke, getJoke}) => {
     useEffect(() => {
     });
 
