@@ -7,11 +7,11 @@ const Jokes = ({joke, isFetching, error, getJoke}) => {
     useEffect(() => {
     });
 
-    console.log(getJoke())
-    
     const handleClick = () => {
-        getJoke()
+       getJoke();
     }
+
+    console.log(error)
 
     if (error) {
         return <h2>We got an error on our hands:</h2>
@@ -21,13 +21,16 @@ const Jokes = ({joke, isFetching, error, getJoke}) => {
     }
     return(
         <>
-        <h2>NERD JOKES! {joke}</h2>
-        <button onClick={handleClick}>Get new joke</button>
+        <h1>Chuck Norris <br/> for President</h1>
+        <button onClick={handleClick}>Learn More</button>
+        <h3>{joke}</h3>
         </>
     )
 }
 
 const mapStateToProps = state => {
+        console.log(state.data)
+        console.log(state.isFetching)
     return {
         joke: state.joke,
         isFetching: state.isFetching,
