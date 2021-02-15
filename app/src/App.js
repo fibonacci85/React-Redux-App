@@ -1,0 +1,15 @@
+
+import React from 'react';
+import './App.css';
+import Jokes from './components/index';
+
+function App() {
+  
+  return (
+    <div className="App">
+      <Jokes />
+    </div>
+  );
+}
+
+export default App;
